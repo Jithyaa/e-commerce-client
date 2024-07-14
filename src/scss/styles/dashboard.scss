@@ -1,0 +1,10 @@
+.dashboard {
+    display: flex;
+  }
+  
+  .dashboard__content {
+    margin-left: 300px; // Width of the sidebar
+    padding: 20px;
+    width: calc(100% - 250px); // Adjust width according to sidebar
+  }
+  

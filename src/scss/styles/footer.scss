@@ -1,0 +1,95 @@
+.footer {
+    background-color: #1a202c; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 2rem 0; /* Padding top and bottom */
+  
+    .footercontainer {
+      max-width: 70rem; /* Maximum width of content */
+      margin: 0 auto; /* Center align content */
+      padding: 0 1.5rem; /* Horizontal padding for responsiveness */
+  
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        .column {
+          width: 100%; /* Full width on small screens */
+          margin-bottom: 2rem; /* Bottom margin between sections */
+  
+          @media (min-width: 768px) {
+            width: calc(33.333% - 1rem); /* One third width on medium screens */
+          }
+  
+          h5 {
+            font-size: 1.25rem; /* Larger heading font size */
+            font-weight: bold; /* Bold font weight */
+            margin-bottom: 1rem; /* Bottom margin for heading */
+          }
+  
+          p {
+            font-size: 0.875rem; /* Smaller paragraph font size */
+            line-height: 1.5; /* Line height for readability */
+          }
+  
+          ul {
+            list-style: none; /* Remove default list styles */
+            padding: 0; /* Remove padding */
+            margin-top: 1rem; /* Top margin for list */
+  
+            li {
+              margin-bottom: 0.5rem; /* Bottom margin for list items */
+  
+              a {
+                color: #ffffff; /* White link color */
+                text-decoration: none; /* Remove underline */
+                transition: color 0.3s; /* Smooth color transition */
+  
+                &:hover {
+                  color: #38a169; /* Dark green on hover */
+                }
+              }
+            }
+          }
+  
+          .social {
+            display: flex; /* Flex layout for social icons */
+            gap: 1rem; /* Gap between social icons */
+  
+            a {
+              color: #ffffff; /* White social icon color */
+              font-size: 1.5rem; /* Larger social icon size */
+              transition: color 0.3s; /* Smooth color transition */
+  
+              &:hover {
+                color: #63b3ed; /* Light blue on hover */
+              }
+            }
+          }
+        }
+      }
+  
+      .copyright {
+        border-top: 1px solid #4a5568; /* Gray border top */
+        padding-top: 1.5rem; /* Top padding for copyright */
+        font-size: 0.75rem; /* Smaller font size for copyright */
+        text-align: center; /* Center align copyright text */
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer .container {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .footer .grid {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+  
+      .column {
+        width: 100%; /* Full width for columns on smaller screens */
+        margin-bottom: 1.5rem; /* Reduce bottom margin between sections */
+      }
+    }
+  }
+  

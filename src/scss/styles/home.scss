@@ -1,0 +1,11 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  // Ensure Slider has some margin-bottom to separate it from Footer
+  .slider-container {
+    margin-bottom: 20px;
+  }
+  
